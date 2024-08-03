@@ -1,10 +1,10 @@
-const {Clutter, Gio, Shell, St} = imports.gi;
-const AppDisplay = imports.ui.appDisplay;
-const AppFavorites = imports.ui.appFavorites;
-const BoxPointer = imports.ui.boxpointer;
-const Dash = imports.ui.dash;
-const Main = imports.ui.main;
-const PopupMenu = imports.ui.popupMenu;
+import {Clutter, Gio, Shell, St} from 'gi';
+import * as AppDisplay from 'resource:///org/gnome/shell/ui/appDisplay.js';
+import * as AppFavorites from 'resource:///org/gnome/shell/ui/appFavorites.js';
+import * as BoxPointer from 'resource:///org/gnome/shell/ui/ui.boxpointer.js';
+import * as Dash from 'resource:///org/gnome/shell/ui/ui.dash.js';
+import * as Main from 'resource:///org/gnome/shell/ui/ui.main.js';
+import * as PopupMenu from 'resource:///org/gnome/shell/ui/ui.popupMenu.js';
 
 let originalEnsurePlaceholder;
 function ensurePlaceholder(source) {
